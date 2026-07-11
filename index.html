@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator-app" aria-label="Simple calculator">
+    <section class="calculator-card">
+      <div class="calculator-header">
+        <div>
+          <p class="calculator-title">Calculator</p>
+          <p class="calculator-subtitle">Fast, clean, easy to use</p>
+        </div>
+        <div class="theme-badge">Light</div>
+      </div>
+
+      <div class="display" id="display" aria-live="polite" role="textbox" tabindex="0">0</div>
+
+      <div class="calculator-grid">
+        <button type="button" class="btn secondary" data-action="clear">AC</button>
+        <button type="button" class="btn secondary" data-action="delete">DEL</button>
+        <button type="button" class="btn secondary" data-value="%">%</button>
+        <button type="button" class="btn operator" data-value="/">÷</button>
+
+        <button type="button" class="btn" data-value="7">7</button>
+        <button type="button" class="btn" data-value="8">8</button>
+        <button type="button" class="btn" data-value="9">9</button>
+        <button type="button" class="btn operator" data-value="*">×</button>
+
+        <button type="button" class="btn" data-value="4">4</button>
+        <button type="button" class="btn" data-value="5">5</button>
+        <button type="button" class="btn" data-value="6">6</button>
+        <button type="button" class="btn operator" data-value="-">−</button>
+
+        <button type="button" class="btn" data-value="1">1</button>
+        <button type="button" class="btn" data-value="2">2</button>
+        <button type="button" class="btn" data-value="3">3</button>
+        <button type="button" class="btn operator" data-value="+">+</button>
+
+        <button type="button" class="btn zero" data-value="0">0</button>
+        <button type="button" class="btn" data-value=".">.</button>
+        <button type="button" class="btn equal" data-action="calculate">=</button>
+      </div>
+
+      <p class="hint">Tip: use keyboard arrows and Enter for quick input.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
